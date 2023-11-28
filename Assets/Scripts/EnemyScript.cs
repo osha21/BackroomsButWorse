@@ -45,7 +45,7 @@ public class EnemyScript : MonoBehaviour
 
         if (!playerInSightRange && !playerInAttackRange)
         {
-            Patroling();
+            Patrolling();
         }
         if (playerInSightRange && !playerInAttackRange)
         {
@@ -57,7 +57,7 @@ public class EnemyScript : MonoBehaviour
         }
     }
 
-    private void Patroling()
+    private void Patrolling()
     {
        if (transform.position != waypoints[currentWaypoint].position)
         {
